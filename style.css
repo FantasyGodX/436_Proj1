@@ -67,11 +67,12 @@ section {
   display: flex;
   gap: 20px;
 }
-
 .site-nav a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
+  padding: 8px 14px; /* add this */
+  border-radius: 6px; /* optional, looks nicer */
 }
 
 
@@ -132,3 +133,8 @@ body {
 .dark-mode .primary-btn:hover {
   background-color: #555;
 }
+
+.dark-mode .site-nav a {
+  color: #fff;
+}
+
