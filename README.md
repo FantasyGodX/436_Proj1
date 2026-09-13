@@ -4,7 +4,7 @@
 A single‑page restaurant website built for CSC 436 demonstrating semantic HTML, responsive CSS, Flexbox, Grid layout, and a JavaScript dark/light mode toggle.
 
 ## Live Site
-(Added after Netlify deployment)
+mango-moon.netlify.app
 
 ## GitHub Repository
 https://github.com/FantasyGodX/436_Proj1
