@@ -70,6 +70,36 @@
       </div>
     </section>
 
+    <!-- Order section -->
+<section id="order" class="order">
+  <h2>Place an Order</h2>
+  <p>Order your favorite mango sticky rice bowl for pickup.</p>
+
+  <form id="order-form">
+    <label for="customer-name">Name</label>
+    <input type="text" id="customer-name" name="customer-name" required />
+
+    <label for="customer-email">Email</label>
+    <input type="email" id="customer-email" name="customer-email" required />
+
+    <label for="bowl-choice">Choose Your Bowl</label>
+    <select id="bowl-choice" name="bowl-choice" required>
+      <option value="">Select a bowl...</option>
+      <option value="sunrise">Sunrise Classic - $8.50</option>
+      <option value="double">Double Mango - $9.50</option>
+      <option value="golden">Golden Bowl - $10.00</option>
+    </select>
+
+    <label for="pickup-time">Pickup Time</label>
+    <input type="time" id="pickup-time" name="pickup-time" required />
+
+    <button type="submit" class="primary-btn">Submit Order</button>
+
+    <p id="form-message" class="form-message"></p>
+  </form>
+</section>
+
+
   </main>
 
   <!-- Footer -->
