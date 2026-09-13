@@ -1,0 +1,9 @@
+.hero-image img {
+  width: 100%;
+  max-width: 500px; /* adjust this number to make it smaller or larger */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px; /* optional, makes it look nicer */
+}
+
