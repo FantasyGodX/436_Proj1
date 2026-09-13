@@ -1,3 +1,50 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+p {
+  margin-bottom: 15px;
+}
+
+
+.primary-btn {
+  background-color: #f7b731; /* mango yellow */
+  color: #000;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.primary-btn:hover {
+  background-color: #e0a326;
+}
+
+
+section {
+  margin-bottom: 40px;
+}
+
+
 .hero-image img {
   width: 100%;
   max-width: 500px; /* adjust this number to make it smaller or larger */
