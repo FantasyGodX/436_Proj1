@@ -111,3 +111,24 @@ body {
     text-align: center;
 }
 }
+
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.dark-mode header,
+.dark-mode section,
+.dark-mode footer {
+  background-color: #2a2a2a;
+}
+
+.dark-mode .primary-btn {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode .primary-btn:hover {
+  background-color: #555;
+}
