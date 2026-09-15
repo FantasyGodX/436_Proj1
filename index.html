@@ -1,123 +1,121 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-<link rel="stylesheet" href="style.css" />
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mango Moon</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mango Moon</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
 <header class="site-header">
-    <div class="brand">
-<span class="brand-logo">🥭</span>
-<h1>Mango Moon</h1>
-    </div>
-    <button id="theme-toggle" class="primary-btn">Dark Mode</button>
+  <div class="brand">
+    <span class="brand-logo">🥭</span>
+    <h1>Mango Moon</h1>
+  </div>
 
-    <nav class="site-nav">
-<ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#order">Order</a></li>
-</ul>
-    </nav>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#order">Order</a></li>
+    </ul>
+  </nav>
+
+  <button id="theme-toggle" class="primary-btn">Dark Mode 🥭</button>
 </header>
 
 <main>
 
-<!-- Hero section -->
-    <section id="hero" class="hero">
-<article class="hero-content">
-        <h2>Fresh Mango Sticky Rice, Made Daily</h2>
-        <p>
-Welcome to Mango Moon — your home for handcrafted mango sticky rice.
-We prepare every bowl with warm coconut cream, soft sticky rice, and
-perfectly ripe mango.
-</p>
-</article>
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <article class="hero-content">
+      <h2>Fresh Mango Sticky Rice, Made Daily</h2>
+      <p>
+        Welcome to Mango Moon — your home for handcrafted mango sticky rice.
+        We prepare every bowl with warm coconut cream, soft sticky rice, and
+        perfectly ripe mango.
+      </p>
+    </article>
 
-<figure class="hero-image">
-        <img src="images/rice_img.png" alt="Mango sticky rice bowl options" />
-</figure>
-    </section>
+    <figure class="hero-image">
+      <img src="images/rice_img.png" alt="Mango sticky rice bowl" />
+    </figure>
+  </section>
 
-    <section id="menu" class="menu">
-<h2>Classic Mango Sticky Rice Bowls</h2>
-<p>Our handcrafted classics, made fresh daily with warm coconut cream and ripe mango.</p>
+  <!-- MENU -->
+  <section id="menu" class="menu">
+    <h2>Classic Mango Sticky Rice Bowls</h2>
+    <p>Made fresh daily with warm coconut cream and ripe mango.</p>
 
-<div class="menu-grid">
-        <article class="menu-item" data-price="8.50">
-<h3>Sunrise Classic</h3>
-<p>Sticky rice, ripe mango, warm coconut cream, toasted sesame.</p>
-<p class="price">$8.50</p>
-        </article>
+    <div class="menu-grid">
+      <article class="menu-item" data-price="8.50">
+        <h3>Sunrise Classic</h3>
+        <p>Sticky rice, ripe mango, coconut cream, toasted sesame.</p>
+        <p class="price">$8.50</p>
+      </article>
 
-        <article class="menu-item" data-price="9.50">
-<h3>Double Mango</h3>
-<p>Extra mango slices, sticky rice, coconut cream, roasted coconut flakes.</p>
-<p class="price">$9.50</p>
-        </article>
+      <article class="menu-item" data-price="9.50">
+        <h3>Double Mango</h3>
+        <p>Extra mango slices, sticky rice, coconut cream, coconut flakes.</p>
+        <p class="price">$9.50</p>
+      </article>
 
-        <article class="menu-item" data-price="10.00">
-<h3>Golden Bowl</h3>
-<p>Sticky rice, mango, coconut cream, honey drizzle, sesame crunch.</p>
-<p class="price">$10.00</p>
-        </article>
-</div>
-    </section>
+      <article class="menu-item" data-price="10.00">
+        <h3>Golden Bowl</h3>
+        <p>Sticky rice, mango, coconut cream, honey drizzle, sesame crunch.</p>
+        <p class="price">$10.00</p>
+      </article>
+    </div>
+  </section>
 
-<section id="order" class="order">
-<h2>Place an Order</h2>  
-<p>Order your favorite mango sticky rice bowl for pickup.</p>
+  <section id="order" class="order">
+    <h2>Place an Order</h2>
+    <p>Order your favorite mango sticky rice bowl for pickup.</p>
 
-<form id="order-form">
-    <label for="customer-name">Name</label>
-    <input type="text" id="customer-name" name="customer-name" required />
+    <form id="order-form">
+      <label for="customer-name">Name</label>
+      <input type="text" id="customer-name" required />
 
-    <label for="customer-email">Email</label>
-    <input type="email" id="customer-email" name="customer-email" required />
+      <label for="customer-email">Email</label>
+      <input type="email" id="customer-email" required />
 
-    <label for="bowl-choice">Choose Your Bowl</label>
-    <select id="bowl-choice" name="bowl-choice" required>
-<option value="">Select a bowl...</option>
-<option value="sunrise">Sunrise Classic - $8.50</option>
-<option value="double">Double Mango - $9.50</option>
-<option value="golden">Golden Bowl - $10.00</option>
-    </select>
+      <label for="bowl-choice">Choose Your Bowl</label>
+      <select id="bowl-choice" required>
+        <option value="">Select a bowl...</option>
+        <option value="sunrise">Sunrise Classic - $8.50</option>
+        <option value="double">Double Mango - $9.50</option>
+        <option value="golden">Golden Bowl - $10.00</option>
+      </select>
 
-    <label for="pickup-time">Pickup Time</label>
-    <input type="time" id="pickup-time" name="pickup-time" required />
+      <label for="pickup-time">Pickup Time</label>
+      <input type="time" id="pickup-time" required />
 
-    <button type="submit" class="primary-btn">Submit Order</button>
+      <button type="submit" class="primary-btn">Submit Order</button>
 
-    <p id="form-message" class="form-message"></p>
-</form>
-</section>
-
+      <p id="form-message" class="form-message"></p>
+    </form>
+  </section>
 
 </main>
 
 <footer class="site-footer">
-<p>&copy; 2024 Mango Moon. All rights reserved.</p>
-<p>Made fresh daily in Staten Island, NY.</p>
+  <p>&copy; 2024 Mango Moon. All rights reserved.</p>
+  <p>Made fresh daily in Staten Island, NY.</p>
 </footer>
 
 <script>
-const toggleBtn = document.getElementById("theme-toggle");
+  const toggleBtn = document.getElementById("theme-toggle");
 
-toggleBtn.addEventListener("click", () => {
+  toggleBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
 
-    if (document.body.classList.contains("dark-mode")) {
-    toggleBtn.textContent = "Light Mode";
-    } else {
-    toggleBtn.textContent = "Dark Mode";
-    }
-});
+    toggleBtn.textContent =
+      document.body.classList.contains("dark-mode")
+        ? "Light Mode 🥭"
+        : "Dark Mode 🥭";
+  });
 </script>
 
 </body>
