@@ -5,23 +5,23 @@
 
 > **How this review was made.** Your instructor reviewed this project with Claude (Anthropic's AI) as a second set of eyes. Claude cloned the repo, read every line of the HTML and CSS, loaded the live site at phone, tablet and desktop widths, ran the W3C validator, clicked the dark mode toggle and reloaded to see if it stuck, filled in the order form and submitted it, measured the image, diffed the live site against the repo, and read all twenty-four commits. Every note and every point below was read and approved by your instructor. Same rubric, same standard, just more time spent looking at your code than one person has in a grading week.
 
-## Grade: 79 / 100
+## Grade: 80 / 100
 
 | Category | Points | Earned | One line |
 |---|---|---|---|
 | Semantic HTML | 20 | **18** | Every element the brief lists, one h1, a label on every field, zero validator errors; hero text wrapped in an article, toggle has no pressed state |
-| CSS layout | 25 | **18** | Flexbox header, nav and form, auto-fit Grid menu, all yours and all working; no container so desktop text runs 1240 px wide, menu items are unstyled, dark mode stops at the inputs |
+| CSS layout | 25 | **19** | Flexbox header, nav and form, auto-fit Grid menu, all yours and all working; no container so desktop text runs 1240 px wide, menu items are unstyled, dark mode stops at the inputs |
 | Responsive design | 15 | **12** | No horizontal scroll anywhere, header stacks, grid steps 1 to 2 to 3; one desktop-first query, hero never uses the width it has |
 | JavaScript interaction | 15 | **11** | Dark mode toggle works and relabels itself; the order form submits to nowhere and wipes itself, the choice is lost on reload |
 | Repository and deployment | 15 | **14** | Best commit history in the class, README has everything, deploy matches repo; editor settings committed, no .gitignore |
 | Content and polish | 10 | **6** | Coherent little restaurant with consistent copy and color; a 2.2 MB hero image that repeats the menu and disagrees with it, plain menu, 2024 footer |
-| **Total** | **100** | **79** | Disciplined and correct, and much smaller than it needed to be. Finish the form and give it a design. |
+| **Total** | **100** | **80** | Disciplined, correct, and much smaller than it needed to be. Finish the form and give it a design. |
 
 ## The short version
 
 Everything you built works and validates. Header, nav with a list, main with three sections, articles for the menu items, a figure, a form with a label on every field, a footer, one h1. Flexbox does the header, the nav and the form; an auto-fit Grid does the menu and steps from one column to three without a single media query. The dark mode toggle flips the page and relabels itself. The commit history is the best in the class: twenty-four commits that read like a build log, "Add header with brand and navigation structure," "Add CSS grid layout for menu items," "Add responsive media queries for mobile layout." Anyone could follow how this site was made.
 
-The grade is in the seventies rather than the eighties because the site stops at the skeleton. The whole thing is 123 lines of HTML and 138 of CSS. On a desktop the text runs edge to edge across 1240 pixels because nothing sets a max-width. The menu items are three headings in a grid with no card around them. The order form, which is the page's reason to exist, has a `#form-message` paragraph waiting for a confirmation that no script ever writes, so submitting it reloads the page and empties every field. Dark mode leaves the inputs white. And the hero image is a 2.2 MB PNG of the same three bowls the menu lists underneath it, with names and prices baked into the pixels, one of which does not match the text.
+The grade is an 80 rather than a 90 because the site stops at the skeleton. The whole thing is 123 lines of HTML and 138 of CSS. On a desktop the text runs edge to edge across 1240 pixels because nothing sets a max-width. The menu items are three headings in a grid with no card around them. The order form, which is the page's reason to exist, has a `#form-message` paragraph waiting for a confirmation that no script ever writes, so submitting it reloads the page and empties every field. Dark mode leaves the inputs white. And the hero image is a 2.2 MB PNG of the same three bowls the menu lists underneath it, with names and prices baked into the pixels, one of which does not match the text.
 
 None of this is hard to fix. The roadmap at the bottom is three evenings.
 
@@ -62,7 +62,7 @@ None of this is hard to fix. The roadmap at the bottom is three evenings.
 - **The toggle button announces nothing** ([index.html#L26](https://github.com/FantasyGodX/436_Proj1/blob/a6fa8b176819906a46d02e2d8b96633a59680da4/index.html#L26)). Add `aria-pressed="false"` and flip it in the click handler. A screen reader then says "Dark mode, toggle button, not pressed."
 - Small: the trailing slashes on `<meta />`, `<link />`, `<img />` and `<input />` are harmless in HTML5 but the validator flags them eight times. Drop them.
 
-## CSS layout: 18 / 25
+## CSS layout: 19 / 25
 
 ### What's working
 
