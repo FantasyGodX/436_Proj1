@@ -117,6 +117,11 @@
           ? "Light Mode 🥭"
           : "Dark Mode 🥭";
     });
+
+      document.getElementById("order-form").addEventListener("submit", (e) => {e.preventDefault();
+      document.getElementById("form-message").textContent = "Order submitted! We'll have it ready for pickup.";
+      });
+
   </script>
 
 </body>
