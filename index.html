@@ -109,19 +109,35 @@
   <script>
     const toggleBtn = document.getElementById("theme-toggle");
 
+    // Load saved theme
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark-mode");
+      toggleBtn.textContent = "Light Mode 🥭";
+    }
+
+    // Toggle + save theme
     toggleBtn.addEventListener("click", () => {
       document.body.classList.toggle("dark-mode");
 
+      const mode = document.body.classList.contains("dark-mode")
+        ? "dark"
+        : "light";
+
+      localStorage.setItem("theme", mode);
+
       toggleBtn.textContent =
-        document.body.classList.contains("dark-mode")
-          ? "Light Mode 🥭"
-          : "Dark Mode 🥭";
+        mode === "dark" ? "Light Mode 🥭" : "Dark Mode 🥭";
     });
 
-      document.getElementById("order-form").addEventListener("submit", (e) => {e.preventDefault();
-      document.getElementById("form-message").textContent = "Order submitted! We'll have it ready for pickup.";
-      });
+    // Form submission
+    document.getElementById("order-form").addEventListener("submit", (e) => {
+      e.preventDefault();
 
+      document.getElementById("form-message").textContent =
+        "Order submitted! We'll have it ready for pickup.";
+
+      document.getElementById("order-form").reset();
+    });
   </script>
 
 </body>
